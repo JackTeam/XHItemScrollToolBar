@@ -14,11 +14,17 @@
 
 @implementation XHItemView
 
-- (id)initWithFrame:(CGRect)frame
-{
+- (instancetype)initWithFrame:(CGRect)frame item:(XHItem *)item {
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
+        self.item = item;
+        if (item.normalImage)
+            [self setImage:item.normalImage forState:UIControlStateNormal];
+        if (item.selectedImage)
+            [self setImage:item.selectedImage forState:UIControlStateSelected];
+        if (item.title)
+            [self setTitle:item.title forState:UIControlStateNormal];
     }
     return self;
 }
