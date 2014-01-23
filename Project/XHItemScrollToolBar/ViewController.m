@@ -43,13 +43,35 @@
         NSLog(@"index : %d", index);
     }];
     [items addObject:filterItem];
-    XHItemScrollToolBar *itemScrollToolBar = [[XHItemScrollToolBar alloc]initWithFrame:CGRectMake(0, CGRectGetHeight(self.view.bounds) - kXHItemScrollToolBarHeight, CGRectGetWidth(self.view.bounds), kXHItemScrollToolBarHeight)];
-    itemScrollToolBar.itemWidth = CGRectGetWidth([[UIScreen mainScreen] bounds]) / 5.0;
-    itemScrollToolBar.items = items;
-    itemScrollToolBar.selectIndex = 3;
-    [self.view addSubview:itemScrollToolBar];
+    XHItemScrollToolBar *itemScrollToolBarToBottom = [[XHItemScrollToolBar alloc]initWithFrame:CGRectMake(0, CGRectGetHeight(self.view.bounds) - kXHItemScrollToolBarHeight, CGRectGetWidth(self.view.bounds), kXHItemScrollToolBarHeight)];
+    itemScrollToolBarToBottom.itemWidth = CGRectGetWidth([[UIScreen mainScreen] bounds]) / 5.0;
+    itemScrollToolBarToBottom.items = items;
+    itemScrollToolBarToBottom.selectIndex = 2;
+    [self.view addSubview:itemScrollToolBarToBottom];
+    [itemScrollToolBarToBottom reloadData];
     
-    [itemScrollToolBar reloadData];
+    
+    XHItemScrollToolBar *itemScrollToolBarToTop = [[XHItemScrollToolBar alloc]initWithFrame:CGRectMake(0, 20, CGRectGetWidth(self.view.bounds), kXHItemScrollToolBarHeight)];
+    itemScrollToolBarToTop.itemWidth = CGRectGetWidth([[UIScreen mainScreen] bounds]) / 5.0;
+    itemScrollToolBarToTop.items = items;
+    itemScrollToolBarToTop.selectIndex = 0;
+    [self.view addSubview:itemScrollToolBarToTop];
+    [itemScrollToolBarToTop reloadData];
+    
+    
+    for (int i = 0; i < 10; i ++) {
+        XHItem *item = [[XHItem alloc] initWithNormalImage:[UIImage imageNamed:@"tabBar-camera"] selectedImage:[UIImage imageNamed:@"tabBar-camera-on"] title:@"title5" itemSelectedBlcok:^(XHItemView *itemView) {
+            NSInteger index = itemView.item.index;
+            NSLog(@"index : %d", index);
+        }];
+        [items addObject:item];
+    }
+    XHItemScrollToolBar *itemScrollToolBarToMid = [[XHItemScrollToolBar alloc]initWithFrame:CGRectMake(0, CGRectGetHeight(self.view.bounds) / 2.0 - kXHItemScrollToolBarHeight / 2.0, CGRectGetWidth(self.view.bounds), kXHItemScrollToolBarHeight)];
+    itemScrollToolBarToMid.itemWidth = CGRectGetWidth([[UIScreen mainScreen] bounds]) / 5.0;
+    itemScrollToolBarToMid.items = items;
+    itemScrollToolBarToMid.selectIndex = 2;
+    [self.view addSubview:itemScrollToolBarToMid];
+    [itemScrollToolBarToMid reloadData];
 }
 
 - (void)viewDidLoad
