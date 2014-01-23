@@ -12,6 +12,7 @@
 
 @property (nonatomic, strong) NSArray *itemViews;
 
+@property (nonatomic, strong) UIImageView *indicatorImageView;
 @end
 
 @implementation XHItemScrollToolBar
@@ -51,6 +52,11 @@
     self.itemViews = itemVies;
     
     [self _setupContentSize];
+    [self _setupIndicatorImageView];
+}
+
+- (void)_setupIndicatorImageView {
+    
 }
 
 - (void)_setupContentSize {
