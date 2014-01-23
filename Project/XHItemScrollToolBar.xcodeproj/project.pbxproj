@@ -13,8 +13,6 @@
 		ABEBD8021891735E005D3DA7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ABEBD8001891735E005D3DA7 /* InfoPlist.strings */; };
 		ABEBD8041891735E005D3DA7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ABEBD8031891735E005D3DA7 /* main.m */; };
 		ABEBD8081891735E005D3DA7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ABEBD8071891735E005D3DA7 /* AppDelegate.m */; };
-		ABEBD80B1891735E005D3DA7 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABEBD8091891735E005D3DA7 /* Main_iPhone.storyboard */; };
-		ABEBD80E1891735E005D3DA7 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABEBD80C1891735E005D3DA7 /* Main_iPad.storyboard */; };
 		ABEBD8111891735E005D3DA7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABEBD8101891735E005D3DA7 /* ViewController.m */; };
 		ABEBD8131891735E005D3DA7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABEBD8121891735E005D3DA7 /* Images.xcassets */; };
 		ABEBD81A1891735E005D3DA7 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABEBD8191891735E005D3DA7 /* XCTest.framework */; };
@@ -45,8 +43,6 @@
 		ABEBD8051891735E005D3DA7 /* XHItemScrollToolBar-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XHItemScrollToolBar-Prefix.pch"; sourceTree = "<group>"; };
 		ABEBD8061891735E005D3DA7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		ABEBD8071891735E005D3DA7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		ABEBD80A1891735E005D3DA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		ABEBD80D1891735E005D3DA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		ABEBD80F1891735E005D3DA7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		ABEBD8101891735E005D3DA7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		ABEBD8121891735E005D3DA7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -117,8 +113,6 @@
 			children = (
 				ABEBD8061891735E005D3DA7 /* AppDelegate.h */,
 				ABEBD8071891735E005D3DA7 /* AppDelegate.m */,
-				ABEBD8091891735E005D3DA7 /* Main_iPhone.storyboard */,
-				ABEBD80C1891735E005D3DA7 /* Main_iPad.storyboard */,
 				ABEBD80F1891735E005D3DA7 /* ViewController.h */,
 				ABEBD8101891735E005D3DA7 /* ViewController.m */,
 				ABEBD8121891735E005D3DA7 /* Images.xcassets */,
@@ -240,9 +234,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABEBD80E1891735E005D3DA7 /* Main_iPad.storyboard in Resources */,
 				ABEBD8131891735E005D3DA7 /* Images.xcassets in Resources */,
-				ABEBD80B1891735E005D3DA7 /* Main_iPhone.storyboard in Resources */,
 				ABEBD8021891735E005D3DA7 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,22 +285,6 @@
 				ABEBD8011891735E005D3DA7 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		ABEBD8091891735E005D3DA7 /* Main_iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				ABEBD80A1891735E005D3DA7 /* Base */,
-			);
-			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		ABEBD80C1891735E005D3DA7 /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				ABEBD80D1891735E005D3DA7 /* Base */,
-			);
-			name = Main_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 		ABEBD8221891735E005D3DA7 /* InfoPlist.strings */ = {
