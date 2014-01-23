@@ -17,6 +17,8 @@
 
 @implementation XHItemScrollToolBar
 
+#pragma mark - Propertys
+
 - (NSArray *)itemViews {
     if (!_itemViews) {
         _itemViews = [[NSArray alloc] init];
@@ -30,9 +32,13 @@
     _items = items;
 }
 
+#pragma mark - Public Api
+
 - (void)reloadData {
     [self _layoutSubviews];
 }
+
+#pragma mark - previte Api
 
 - (void)_layoutSubviews {
     NSMutableArray *itemVies = [[NSMutableArray alloc] initWithCapacity:5];
@@ -76,14 +82,27 @@
     }
 }
 
+#pragma mark - Life cycle
+
+- (void)_setup {
+    self.showsHorizontalScrollIndicator = NO;
+    self.showsVerticalScrollIndicator = NO;
+}
+
+- (id)init {
+    self = [super init];
+    if (self) {
+        [self _setup];
+    }
+    return self;
+}
 
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
-        self.showsHorizontalScrollIndicator = NO;
-        self.showsVerticalScrollIndicator = NO;
+        [self _setup];
     }
     return self;
 }
