@@ -8,6 +8,12 @@
 
 #import "XHItemScrollToolBar.h"
 
+@interface XHItemScrollToolBar ()
+
+@property (nonatomic, strong) NSArray *itemViews;
+
+@end
+
 @implementation XHItemScrollToolBar
 
 - (id)initWithFrame:(CGRect)frame
