@@ -43,6 +43,13 @@
         NSLog(@"index : %d", index);
     }];
     [items addObject:filterItem];
+    XHItemScrollToolBar *itemScrollToolBar = [[XHItemScrollToolBar alloc]initWithFrame:CGRectMake(0, CGRectGetHeight(self.view.bounds) - kXHItemScrollToolBarHeight, CGRectGetWidth(self.view.bounds), kXHItemScrollToolBarHeight)];
+    itemScrollToolBar.itemWidth = CGRectGetWidth([[UIScreen mainScreen] bounds]) / 5.0;
+    itemScrollToolBar.items = items;
+    itemScrollToolBar.selectIndex = 3;
+    [self.view addSubview:itemScrollToolBar];
+    
+    [itemScrollToolBar reloadData];
 }
 
 - (void)viewDidLoad
