@@ -31,13 +31,21 @@ No other frameworks required.
     
     
     XHItemScrollToolBar *itemScrollToolBarToMid = [[XHItemScrollToolBar alloc] initWithFrame:CGRectMake(0, CGRectGetHeight(self.view.bounds) / 2.0 - kXHItemScrollToolBarHeight / 2.0, CGRectGetWidth(self.view.bounds), kXHItemScrollToolBarHeight)];
-    
     itemScrollToolBarToMid.itemWidth = CGRectGetWidth([[UIScreen mainScreen] bounds]) / 5.0;
     itemScrollToolBarToMid.items = items;
     itemScrollToolBarToMid.selectIndex = 2;
     [self.view addSubview:itemScrollToolBarToMid];
     [itemScrollToolBarToMid reloadData];
 ```
+
+##Installation
+
+[CocosPods](http://cocosPods.org) is the recommended methods of installation XHItemScrollToolBar, just add the following line to `Profile`:
+
+```
+pod 'XHItemScrollToolBar'
+```
+
 
 ## Lincense ##
 
