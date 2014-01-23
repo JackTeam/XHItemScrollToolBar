@@ -22,6 +22,7 @@
 		ABEBD8261891735E005D3DA7 /* XHItemScrollToolBarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ABEBD8251891735E005D3DA7 /* XHItemScrollToolBarTests.m */; };
 		ABEBD83218917491005D3DA7 /* XHItemScrollToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = ABEBD83118917491005D3DA7 /* XHItemScrollToolBar.m */; };
 		ABEBD835189174C8005D3DA7 /* XHItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = ABEBD834189174C8005D3DA7 /* XHItemView.m */; };
+		ABEBD838189174F5005D3DA7 /* XHItem.m in Sources */ = {isa = PBXBuildFile; fileRef = ABEBD837189174F5005D3DA7 /* XHItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		ABEBD83118917491005D3DA7 /* XHItemScrollToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHItemScrollToolBar.m; sourceTree = "<group>"; };
 		ABEBD833189174C8005D3DA7 /* XHItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHItemView.h; sourceTree = "<group>"; };
 		ABEBD834189174C8005D3DA7 /* XHItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHItemView.m; sourceTree = "<group>"; };
+		ABEBD836189174F5005D3DA7 /* XHItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHItem.h; sourceTree = "<group>"; };
+		ABEBD837189174F5005D3DA7 /* XHItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +166,8 @@
 				ABEBD83118917491005D3DA7 /* XHItemScrollToolBar.m */,
 				ABEBD833189174C8005D3DA7 /* XHItemView.h */,
 				ABEBD834189174C8005D3DA7 /* XHItemView.m */,
+				ABEBD836189174F5005D3DA7 /* XHItem.h */,
+				ABEBD837189174F5005D3DA7 /* XHItem.m */,
 			);
 			name = Source;
 			path = ../Source;
@@ -264,6 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABEBD838189174F5005D3DA7 /* XHItem.m in Sources */,
 				ABEBD835189174C8005D3DA7 /* XHItemView.m in Sources */,
 				ABEBD8111891735E005D3DA7 /* ViewController.m in Sources */,
 				ABEBD83218917491005D3DA7 /* XHItemScrollToolBar.m in Sources */,
