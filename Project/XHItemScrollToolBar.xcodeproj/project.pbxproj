@@ -84,6 +84,7 @@
 		ABEBD7EB1891735E005D3DA7 = {
 			isa = PBXGroup;
 			children = (
+				ABEBD82F189173C4005D3DA7 /* Source */,
 				ABEBD7FD1891735E005D3DA7 /* XHItemScrollToolBar */,
 				ABEBD81F1891735E005D3DA7 /* XHItemScrollToolBarTests */,
 				ABEBD7F61891735E005D3DA7 /* Frameworks */,
@@ -153,6 +154,14 @@
 				ABEBD8221891735E005D3DA7 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ABEBD82F189173C4005D3DA7 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Source;
+			path = ../Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -390,11 +399,13 @@
 		ABEBD82A1891735E005D3DA7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XHItemScrollToolBar/XHItemScrollToolBar-Prefix.pch";
 				INFOPLIST_FILE = "XHItemScrollToolBar/XHItemScrollToolBar-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -403,11 +414,13 @@
 		ABEBD82B1891735E005D3DA7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XHItemScrollToolBar/XHItemScrollToolBar-Prefix.pch";
 				INFOPLIST_FILE = "XHItemScrollToolBar/XHItemScrollToolBar-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -474,6 +487,7 @@
 				ABEBD82B1891735E005D3DA7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ABEBD82C1891735E005D3DA7 /* Build configuration list for PBXNativeTarget "XHItemScrollToolBarTests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +496,7 @@
 				ABEBD82E1891735E005D3DA7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
