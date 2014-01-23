@@ -23,6 +23,10 @@
 		ABEBD83218917491005D3DA7 /* XHItemScrollToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = ABEBD83118917491005D3DA7 /* XHItemScrollToolBar.m */; };
 		ABEBD835189174C8005D3DA7 /* XHItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = ABEBD834189174C8005D3DA7 /* XHItemView.m */; };
 		ABEBD838189174F5005D3DA7 /* XHItem.m in Sources */ = {isa = PBXBuildFile; fileRef = ABEBD837189174F5005D3DA7 /* XHItem.m */; };
+		ABEBD83D189177C2005D3DA7 /* tabBar-camera-on.png in Resources */ = {isa = PBXBuildFile; fileRef = ABEBD839189177C2005D3DA7 /* tabBar-camera-on.png */; };
+		ABEBD83E189177C2005D3DA7 /* tabBar-camera-on@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ABEBD83A189177C2005D3DA7 /* tabBar-camera-on@2x.png */; };
+		ABEBD83F189177C2005D3DA7 /* tabBar-camera.png in Resources */ = {isa = PBXBuildFile; fileRef = ABEBD83B189177C2005D3DA7 /* tabBar-camera.png */; };
+		ABEBD840189177C2005D3DA7 /* tabBar-camera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ABEBD83C189177C2005D3DA7 /* tabBar-camera@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +64,10 @@
 		ABEBD834189174C8005D3DA7 /* XHItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHItemView.m; sourceTree = "<group>"; };
 		ABEBD836189174F5005D3DA7 /* XHItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHItem.h; sourceTree = "<group>"; };
 		ABEBD837189174F5005D3DA7 /* XHItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHItem.m; sourceTree = "<group>"; };
+		ABEBD839189177C2005D3DA7 /* tabBar-camera-on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabBar-camera-on.png"; sourceTree = "<group>"; };
+		ABEBD83A189177C2005D3DA7 /* tabBar-camera-on@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabBar-camera-on@2x.png"; sourceTree = "<group>"; };
+		ABEBD83B189177C2005D3DA7 /* tabBar-camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabBar-camera.png"; sourceTree = "<group>"; };
+		ABEBD83C189177C2005D3DA7 /* tabBar-camera@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabBar-camera@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +141,10 @@
 		ABEBD7FE1891735E005D3DA7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				ABEBD839189177C2005D3DA7 /* tabBar-camera-on.png */,
+				ABEBD83A189177C2005D3DA7 /* tabBar-camera-on@2x.png */,
+				ABEBD83B189177C2005D3DA7 /* tabBar-camera.png */,
+				ABEBD83C189177C2005D3DA7 /* tabBar-camera@2x.png */,
 				ABEBD7FF1891735E005D3DA7 /* XHItemScrollToolBar-Info.plist */,
 				ABEBD8001891735E005D3DA7 /* InfoPlist.strings */,
 				ABEBD8031891735E005D3DA7 /* main.m */,
@@ -249,8 +261,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABEBD83E189177C2005D3DA7 /* tabBar-camera-on@2x.png in Resources */,
+				ABEBD83F189177C2005D3DA7 /* tabBar-camera.png in Resources */,
 				ABEBD8131891735E005D3DA7 /* Images.xcassets in Resources */,
+				ABEBD840189177C2005D3DA7 /* tabBar-camera@2x.png in Resources */,
 				ABEBD8021891735E005D3DA7 /* InfoPlist.strings in Resources */,
+				ABEBD83D189177C2005D3DA7 /* tabBar-camera-on.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
