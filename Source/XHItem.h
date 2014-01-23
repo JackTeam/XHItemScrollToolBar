@@ -8,6 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
+@class XHItemView;
+typedef void(^XHItemSelectedBlcok)(XHItemView *itemView);
+
 @interface XHItem : NSObject
+@property (nonatomic, assign) NSInteger index;
+@property (nonatomic, readonly) UIImage *selectedImage;
+@property (nonatomic, readonly) UIImage *normalImage;
+@property (nonatomic, readonly) NSString *title;
+@property (nonatomic, readonly) XHItemSelectedBlcok itemSelectedCompled;
+
+- (instancetype)initWithNormalImage:(UIImage *)normalImage selectedImage:(UIImage *)selectedImage title:(NSString *)title itemSelectedBlcok:(XHItemSelectedBlcok)itemSelectedCompled;
 
 @end
