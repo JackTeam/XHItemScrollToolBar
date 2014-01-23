@@ -8,6 +8,10 @@
 
 #import "XHItemView.h"
 
+@interface XHItemView ()
+@property (nonatomic, strong) XHItem *item;
+@end
+
 @implementation XHItemView
 
 - (id)initWithFrame:(CGRect)frame
