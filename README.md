@@ -20,6 +20,7 @@ Drag XHItem.h/XHItem.m and XHItemView.h/XHItemView.m amd XHItemScrollToolBar.h/X
 No other frameworks required.
 
 ```objc
+
   for (int i = 0; i < 10; i ++) {
         XHItem *item = [[XHItem alloc] initWithNormalImage:[UIImage imageNamed:@"tabBar-camera"] selectedImage:[UIImage imageNamed:@"tabBar-camera-on"] title:@"title5" itemSelectedBlcok:^(XHItemView *itemView) {
             NSInteger index = itemView.item.index;
@@ -27,7 +28,10 @@ No other frameworks required.
         }];
         [items addObject:item];
     }
-    XHItemScrollToolBar *itemScrollToolBarToMid = [[XHItemScrollToolBar alloc]initWithFrame:CGRectMake(0, CGRectGetHeight(self.view.bounds) / 2.0 - kXHItemScrollToolBarHeight / 2.0, CGRectGetWidth(self.view.bounds), kXHItemScrollToolBarHeight)];
+    
+    
+    XHItemScrollToolBar *itemScrollToolBarToMid = [[XHItemScrollToolBar alloc] initWithFrame:CGRectMake(0, CGRectGetHeight(self.view.bounds) / 2.0 - kXHItemScrollToolBarHeight / 2.0, CGRectGetWidth(self.view.bounds), kXHItemScrollToolBarHeight)];
+    
     itemScrollToolBarToMid.itemWidth = CGRectGetWidth([[UIScreen mainScreen] bounds]) / 5.0;
     itemScrollToolBarToMid.items = items;
     itemScrollToolBarToMid.selectIndex = 2;
