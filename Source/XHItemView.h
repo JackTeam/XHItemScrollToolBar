@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+#import "XHItem.h"
+
 @interface XHItemView : UIButton
+@property (nonatomic, readonly) XHItem *item;
+- (instancetype)initWithFrame:(CGRect)frame item:(XHItem *)item;
 
 @end
