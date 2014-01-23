@@ -1,8 +1,6 @@
 ![image](https://github.com/JackTeam/XHItemScrollToolBar/raw/master/Screenshots/XHItemScrollToolBar.gif)
 
-XHItemScrollToolBar
-===================
-
+## XHItemScrollToolBar
 XHItemScrollToolBar is a TabBar or ItemBar for rolling, used for user category select
 
 Easy to drop into your project.
@@ -39,9 +37,9 @@ No other frameworks required.
 
 ## Lincense ##
 
-=================== is available under the MIT license. See the LICENSE file for more info.
+XHItemScrollToolBar is available under the MIT license. See the LICENSE file for more info.
 
 ## Instructions
          
-English：If you use open source components in your project, please [Email us](mailto:xhzengAIB@gmail.com?subject=From%20GitHub%20===================) to tell us the name of your application, otherwise the consequence is proud.
+English：If you use open source components in your project, please [Email us](mailto:xhzengAIB@gmail.com?subject=From%20GitHub%20XHItemScrollToolBar) to tell us the name of your application, otherwise the consequence is proud.
 
