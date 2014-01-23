@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "XHItemScrollToolBar.h"
 
 @interface ViewController ()
 
@@ -14,10 +15,41 @@
 
 @implementation ViewController
 
+- (void)_setupItemScrollToolBar {
+    NSMutableArray *items = [[NSMutableArray alloc] initWithCapacity:5];
+    XHItem *backToRootItem = [[XHItem alloc] initWithNormalImage:[UIImage imageNamed:@"tabBar-camera"] selectedImage:[UIImage imageNamed:@"tabBar-camera-on"] title:nil itemSelectedBlcok:^(XHItemView *itemView) {
+        NSLog(@"index : %d", itemView.item.index);
+    }];
+    [items addObject:backToRootItem];
+    
+    XHItem *libraryItem = [[XHItem alloc] initWithNormalImage:[UIImage imageNamed:@"tabBar-camera"] selectedImage:[UIImage imageNamed:@"tabBar-camera-on"] title:nil itemSelectedBlcok:^(XHItemView *itemView) {
+        NSLog(@"index : %d", itemView.item.index);
+    }];
+    [items addObject:libraryItem];
+    
+    XHItem *capturePhotoItem = [[XHItem alloc] initWithNormalImage:[UIImage imageNamed:@"tabBar-camera"] selectedImage:[UIImage imageNamed:@"tabBar-camera-on"] title:nil itemSelectedBlcok:^(XHItemView *itemView) {
+        NSLog(@"index : %d", itemView.item.index);
+    }];
+    [items addObject:capturePhotoItem];
+    
+    XHItem *scenesItem = [[XHItem alloc] initWithNormalImage:[UIImage imageNamed:@"tabBar-camera"] selectedImage:[UIImage imageNamed:@"tabBar-camera-on"] title:nil itemSelectedBlcok:^(XHItemView *itemView) {
+        NSInteger index = itemView.item.index;
+        NSLog(@"index : %d", index);
+    }];
+    [items addObject:scenesItem];
+    
+    XHItem *filterItem = [[XHItem alloc] initWithNormalImage:[UIImage imageNamed:@"tabBar-camera"] selectedImage:[UIImage imageNamed:@"tabBar-camera-on"] title:@"title5" itemSelectedBlcok:^(XHItemView *itemView) {
+        NSInteger index = itemView.item.index;
+        NSLog(@"index : %d", index);
+    }];
+    [items addObject:filterItem];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    [self _setupItemScrollToolBar];
 }
 
 - (void)didReceiveMemoryWarning
