@@ -20,6 +20,7 @@
 		ABEBD81C1891735E005D3DA7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABEBD7FB1891735E005D3DA7 /* UIKit.framework */; };
 		ABEBD8241891735E005D3DA7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ABEBD8221891735E005D3DA7 /* InfoPlist.strings */; };
 		ABEBD8261891735E005D3DA7 /* XHItemScrollToolBarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ABEBD8251891735E005D3DA7 /* XHItemScrollToolBarTests.m */; };
+		ABEBD83218917491005D3DA7 /* XHItemScrollToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = ABEBD83118917491005D3DA7 /* XHItemScrollToolBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		ABEBD8211891735E005D3DA7 /* XHItemScrollToolBarTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "XHItemScrollToolBarTests-Info.plist"; sourceTree = "<group>"; };
 		ABEBD8231891735E005D3DA7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		ABEBD8251891735E005D3DA7 /* XHItemScrollToolBarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XHItemScrollToolBarTests.m; sourceTree = "<group>"; };
+		ABEBD83018917491005D3DA7 /* XHItemScrollToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHItemScrollToolBar.h; sourceTree = "<group>"; };
+		ABEBD83118917491005D3DA7 /* XHItemScrollToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHItemScrollToolBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +156,8 @@
 		ABEBD82F189173C4005D3DA7 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				ABEBD83018917491005D3DA7 /* XHItemScrollToolBar.h */,
+				ABEBD83118917491005D3DA7 /* XHItemScrollToolBar.m */,
 			);
 			name = Source;
 			path = ../Source;
@@ -255,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABEBD8111891735E005D3DA7 /* ViewController.m in Sources */,
+				ABEBD83218917491005D3DA7 /* XHItemScrollToolBar.m in Sources */,
 				ABEBD8081891735E005D3DA7 /* AppDelegate.m in Sources */,
 				ABEBD8041891735E005D3DA7 /* main.m in Sources */,
 			);
