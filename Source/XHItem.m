@@ -16,5 +16,22 @@
 @end
 
 @implementation XHItem
+- (instancetype)initWithNormalImage:(UIImage *)normalImage selectedImage:(UIImage *)selectedImage title:(NSString *)title itemSelectedBlcok:(XHItemSelectedBlcok)itemSelectedCompled {
+    self = [super init];
+    if (self ) {
+        self.normalImage = normalImage;
+        self.selectedImage = selectedImage;
+        self.title = title;
+        self.itemSelectedCompled = itemSelectedCompled;
+    }
+    return self;
+}
+
+- (void)dealloc {
+    self.selectedImage = nil;
+    self.normalImage = nil;
+    self.title = nil;
+    self.itemSelectedCompled = nil;
+}
 
 @end
