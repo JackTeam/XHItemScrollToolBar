@@ -7,6 +7,13 @@
 //
 
 #import "XHItem.h"
+@interface XHItem ()
+@property (nonatomic, readwrite) UIImage *selectedImage;
+@property (nonatomic, readwrite) UIImage *normalImage;
+@property (nonatomic, readwrite) NSString *title;
+@property (nonatomic, readwrite) XHItemSelectedBlcok itemSelectedCompled;
+
+@end
 
 @implementation XHItem
 
