@@ -32,6 +32,14 @@
     _items = items;
 }
 
+- (UIImageView *)indicatorImageView {
+    if (!_indicatorImageView) {
+        _indicatorImageView = [[UIImageView alloc] initWithImage:self.indicatorImage];
+        [self addSubview:_indicatorImageView];
+    }
+    return _indicatorImageView;
+}
+
 #pragma mark - Public Api
 
 - (void)reloadData {
@@ -49,6 +57,7 @@
         XHItemView *itemView = [[XHItemView alloc] initWithFrame:bottomItemFrame item:item];
         if (index == self.selectIndex) {
             itemView.selected = YES;
+            self.indicatorImageView.frame = itemView.frame;
         }
         [itemView addTarget:self action:@selector(itemViewClicked:) forControlEvents:UIControlEventTouchUpInside];
         itemView.frame = bottomItemFrame;
@@ -62,7 +71,7 @@
 }
 
 - (void)_setupIndicatorImageView {
-    
+    [self bringSubviewToFront:self.indicatorImageView];
 }
 
 - (void)_setupContentSize {
@@ -70,6 +79,11 @@
 }
 
 - (void)itemViewClicked:(XHItemView *)itemView {
+    [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+        self.indicatorImageView.frame = itemView.frame;
+    } completion:^(BOOL finished) {
+        
+    }];
     for (XHItemView *_itemView in self.itemViews) {
         if (itemView == _itemView) {
             _itemView.selected = YES;

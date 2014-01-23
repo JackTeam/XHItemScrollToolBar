@@ -67,6 +67,7 @@
         [items addObject:item];
     }
     XHItemScrollToolBar *itemScrollToolBarToMid = [[XHItemScrollToolBar alloc]initWithFrame:CGRectMake(0, CGRectGetHeight(self.view.bounds) / 2.0 - kXHItemScrollToolBarHeight / 2.0, CGRectGetWidth(self.view.bounds), kXHItemScrollToolBarHeight)];
+    itemScrollToolBarToMid.indicatorImage = [UIImage imageNamed:@"cb_green_on"];
     itemScrollToolBarToMid.itemWidth = CGRectGetWidth([[UIScreen mainScreen] bounds]) / 5.0;
     itemScrollToolBarToMid.items = items;
     itemScrollToolBarToMid.selectIndex = 2;
