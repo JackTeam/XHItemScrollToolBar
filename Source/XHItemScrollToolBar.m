@@ -99,8 +99,10 @@
 #pragma mark - Life cycle
 
 - (void)_setup {
+    [self setScrollsToTop:NO];
     self.showsHorizontalScrollIndicator = NO;
     self.showsVerticalScrollIndicator = NO;
+    self.itemWidth = CGRectGetWidth([[UIScreen mainScreen] bounds]) / 5.0;
 }
 
 - (id)init {
