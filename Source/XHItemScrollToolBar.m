@@ -78,11 +78,15 @@
     self.contentSize = CGSizeMake((self.itemWidth + self.itemPaddingX) * self.items.count + self.itemPaddingX, 0);
 }
 
+- (NSInteger)_indexWithItemView:(XHItemView *)itemView {
+    return [self.itemViews indexOfObject:itemView];
+}
+
 - (void)itemViewClicked:(XHItemView *)itemView {
     [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
         self.indicatorImageView.frame = itemView.frame;
     } completion:^(BOOL finished) {
-        
+        self.currentSelectIndex = [self _indexWithItemView:itemView];
     }];
     for (XHItemView *_itemView in self.itemViews) {
         if (itemView == _itemView) {
@@ -94,6 +98,7 @@
     if (itemView.item.itemSelectedCompled) {
         itemView.item.itemSelectedCompled(itemView);
     }
+    
 }
 
 #pragma mark - Life cycle
@@ -103,6 +108,7 @@
     self.showsHorizontalScrollIndicator = NO;
     self.showsVerticalScrollIndicator = NO;
     self.itemWidth = CGRectGetWidth([[UIScreen mainScreen] bounds]) / 5.0;
+    self.currentSelectIndex = 0;
 }
 
 - (id)init {
