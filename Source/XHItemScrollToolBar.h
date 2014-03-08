@@ -19,6 +19,7 @@
 @property (nonatomic, assign) CGFloat itemPaddingY; // default is 0
 @property (nonatomic, assign) NSInteger selectIndex; // default is 0
 @property (nonatomic, strong) UIImage *indicatorImage; // default is nil
+@property (nonatomic, assign) NSInteger currentSelectIndex;
 - (void)reloadData;
 
 @end
